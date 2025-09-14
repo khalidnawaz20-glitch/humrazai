@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HumraazAI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <h1>HumraazAI</h1>
+            <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="hinglish">Hinglish/Urdu</option>
+            </select>
+        </div>
+
+        <!-- Chat messages -->
+        <div id="chatBox" class="chat-box"></div>
+
+        <!-- User input -->
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button id="sendBtn">Send</button>
+        </div>
+
+        <!-- Avatar selection -->
+        <div class="avatar-selection">
+            <p>Select your avatar:</p>
+            <img src="avatars/girl1.png" class="avatar selected" data-avatar="girl1.png" alt="Girl 1">
+            <img src="avatars/girl2.png" class="avatar" data-avatar="girl2.png" alt="Girl 2">
+            <img src="avatars/boy1.png" class="avatar" data-avatar="boy1.png" alt="Boy 1">
+            <img src="avatars/boy2.png" class="avatar" data-avatar="boy2.png" alt="Boy 2">
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
